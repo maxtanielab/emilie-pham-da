@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Emilie Pham Da</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Georgia&display=swap">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div id="page-container">
+    <header>
+        <nav class="max-width-1400 d-flex align-items-center">
+        
+            <a href="index.html" class="d-flex align-items-center td-none">
+                <div class="d-flex align-items-center gap-20">
+                <div class="logo margin-top-10">
+                    <img src="https://maxtanie.com/static/media/logo-blanc.ddb5691b.png" alt="Logo Emilie Pham Da graphiste">
+                </div>
+                <div class="description">
+                    <p class="text-pink">Emilie Pham Da</p>
+                    <p class="text-violet adjust-text-description">Graphiste Motion</p>
+                </div>
+            </a>
+            </div>
+
+            <div class="btn">
+                <a href="prendre-rendez-vous.html" class="font-lazer84 btn-prendre-rdv">Prendre rendez-vous</a>
+            </div>
+
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li>
+                    <a href="competences.html" id="competences-menu">Compétences
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="sous-menu">
+                        <li><a href="illustrations.html">Illustrations</a></li>
+                        <li><a href="webdesign.html">Web Design</a></li>
+                        <li><a href="motion-design.html">Motion Design</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                
+                <li><a href="qui-suis-je.html">Qui suis-je ?</a></li>
+            </ul>
+        </nav>       
+    </header>
+
+    <div class="filter-buttons">
+        <button class="filter-btn" onclick="filterProjects('all')">Tout</button>
+        <button class="filter-btn" onclick="filterProjects('print-web')">Print & Web</button>
+        <button class="filter-btn" onclick="filterProjects('packaging')">Packaging</button>
+        <button class="filter-btn" onclick="filterProjects('social-media')">Social Media</button>
+        <button class="filter-btn" onclick="filterProjects('motion-design')">Motion Design</button>
+        <button class="filter-btn" onclick="filterProjects('illustration')">Illustration</button>
+    </div>
+
+    <div class="projects-gallery">
+        <!-- Projet 1 -->
+        <div class="project print-web">
+            <a href="30-ans-sinon-rien.html">
+                <img src="./images/30-ans-sinon-rien-miniature-portfolio.png" alt="Projet 1">
+                <div class="project-overlay">
+                    <h3>30 Ans Sinon Rien</h3>
+                    <p>Type : Print &amp; Web</p>
+                    <p>Année : 2016</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 2 -->
+        <div class="project print-web">
+            <a href="magazine-retrogame.html">
+                <img src="./images/magazine-retrogame-miniature-portfolio.png" alt="Projet 2">
+                <div class="project-overlay">
+                    <h3>Magazine Retrogame</h3>
+                    <p>Type : Print</p>
+                    <p>Année : 2022</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 3 -->
+        <div class="project social-media">
+            <a href="titi-burger.html">
+                <img src="./images/vegetal-titi-burger-miniature-portfolio.png" alt="Projet 3">
+                <div class="project-overlay">
+                    <h3>Titi Burger</h3>
+                    <p>Type : Social Media</p>
+                    <p>Année : 2020</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 4 -->
+        <div class="project packaging">
+            <a href="chabadou.html">
+                <img src="./images/chabadou-miniature-portfolio.png" alt="Projet 4">
+                <div class="project-overlay">
+                    <h3>Chabadou</h3>
+                    <p>Type : Packaging</p>
+                    <p>Année : 2018</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 5 -->
+        <div class="project packaging">
+            <a href="paper-toy.html">
+                <img src="./images/paper-toy-miniature-portfolio.png" alt="Projet 5">
+                <div class="project-overlay">
+                    <h3>Paper Toy</h3>
+                    <p>Type : Packaging</p>
+                    <p>Année : 2015</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 6 -->
+        <div class="project packaging">
+            <a href="cocas-colas.html">
+                <img src="./images/cocas-colas-miniature-portfolio.png" alt="Projet 6">
+                <div class="project-overlay">
+                    <h3>Cocas Colas</h3>
+                    <p>Type : Packaging</p>
+                    <p>Année : 2015</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 7 -->
+        <div class="project motion-design">
+            <a href="final-fantasy.html">
+                <img src="./images/final-fantasy-miniature-portfolio.png" alt="Projet 7">
+                <div class="project-overlay">
+                    <h3>Final Fantasy</h3>
+                    <p>Type : Motion Design</p>
+                    <p>Année : 2023</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 8 -->
+        <div class="project illustration">
+            <a href="emilie-cosplay.html">
+                <img src="./images/emilie-cosplay-miniature-portfolio.png" alt="Projet 8">
+                <div class="project-overlay">
+                    <h3>Emilie Cosplay</h3>
+                    <p>Type : Illustration</p>
+                    <p>Année : 2021</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 9 -->
+        <div class="project illustration">
+            <a href="cosplay.html">
+                <img src="./images/cosplay-miniature-portfolio.png" alt="Projet 9">
+                <div class="project-overlay">
+                    <h3>Cosplay</h3>
+                    <p>Type : Illustration</p>
+                    <p>Année : 2020</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 10 -->
+        <div class="project motion-design">
+            <a href="life-is-strange.html">
+                <img src="./images/life-is-strange-miniature-portfolio.png" alt="Projet 10">
+                <div class="project-overlay">
+                    <h3>Life is Strange</h3>
+                    <p>Type : Motion Design</p>
+                    <p>Année : 2022</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 11 -->
+        <div class="project illustration">
+            <a href="emilie-pham-da.html">
+                <img src="./images/emilie-pham-da-miniature-portfolio.png" alt="Projet 11">
+                <div class="project-overlay">
+                    <h3>Emilie Pham Da</h3>
+                    <p>Type : Illustration</p>
+                    <p>Année : 2021</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 12 -->
+        <div class="project illustration">
+            <a href="gameplay.html">
+                <img src="./images/gameplay-miniature-portfolio.png" alt="Projet 12">
+                <div class="project-overlay">
+                    <h3>Gameplay</h3>
+                    <p>Type : Illustration</p>
+                    <p>Année : 2022</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 13 -->
+        <div class="project motion-design">
+            <a href="perche.html">
+                <img src="./images/perche-miniature-portfolio.png" alt="Projet 13">
+                <div class="project-overlay">
+                    <h3>Perche</h3>
+                    <p>Type : Motion Design</p>
+                    <p>Année : 2022</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 14 -->
+        <div class="project illustration">
+            <a href="croquis-femme.html">
+                <img src="./images/croquis-femme-miniature-portfolio.png" alt="Projet 14">
+                <div class="project-overlay">
+                    <h3>Croquis Femme</h3>
+                    <p>Type : Illustration</p>
+                    <p>Année : 2023</p>
+                </div>
+            </a>
+        </div>
+    
+        <!-- Projet 15 -->
+        <div class="project illustration">
+            <a href="croquis.html">
+                <img src="./images/croquis-miniature-portfolio.png" alt="Projet 15">
+                <div class="project-overlay">
+                    <h3>Croquis</h3>
+                    <p>Type : Illustration</p>
+                    <p>Année : 2021</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+        
+    
+    <footer id="footer">
+        <div class="social-icons">
+            <a href="#"><img src="./images/instagram@500x-8.svg" alt="Instagram"></a>
+            <a href="#"><img src="./images/discord@500x-8.png" alt="Discord"></a>
+            <a href="#"><img src="./images/twicht@500x-8.svg" alt="Twitch"></a>
+            <a href="#"><img src="./images/linkedin@500x-8.svg" alt="LinkedIn"></a>
+            <a href="#"><img id="youtube-icon" src="./images/youtube@500x-8.svg" alt="YouTube"></a>
+        </div>
+        <p>Politiques de confidentialités | Copyright © Emilie PHAM DA | 2024 Mentions légales</p>
+    </footer>
+</div>
+    <script type="module" src="./scripts/index.js"></script>
+</body>
+</html>
